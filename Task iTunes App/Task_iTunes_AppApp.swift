@@ -11,7 +11,7 @@ import SwiftUI
 struct Task_iTunes_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchView()
         }
     }
 }

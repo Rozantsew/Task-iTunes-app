@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52055E72947889100667A31 /* ImageLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52055E62947889100667A31 /* ImageLoadingView.swift */; };
+		F52055E929478A3900667A31 /* AlbumRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52055E829478A3900667A31 /* AlbumRowView.swift */; };
 		F53A0764293FFF16000BBA11 /* Task_iTunes_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A0763293FFF16000BBA11 /* Task_iTunes_AppApp.swift */; };
-		F53A0766293FFF16000BBA11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A0765293FFF16000BBA11 /* ContentView.swift */; };
+		F53A0766293FFF16000BBA11 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A0765293FFF16000BBA11 /* LaunchView.swift */; };
 		F53A0768293FFF17000BBA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53A0767293FFF17000BBA11 /* Assets.xcassets */; };
 		F53A076B293FFF17000BBA11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53A076A293FFF17000BBA11 /* Preview Assets.xcassets */; };
+		F53A077D294003BD000BBA11 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A077C294003BD000BBA11 /* Album.swift */; };
+		F53A077F2940079C000BBA11 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A077E2940079C000BBA11 /* AlbumViewModel.swift */; };
+		F53A07842940157A000BBA11 /* AlbumSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A07832940157A000BBA11 /* AlbumSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F52055E62947889100667A31 /* ImageLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingView.swift; sourceTree = "<group>"; };
+		F52055E829478A3900667A31 /* AlbumRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRowView.swift; sourceTree = "<group>"; };
 		F53A0760293FFF16000BBA11 /* Task iTunes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task iTunes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53A0763293FFF16000BBA11 /* Task_iTunes_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_iTunes_AppApp.swift; sourceTree = "<group>"; };
-		F53A0765293FFF16000BBA11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F53A0765293FFF16000BBA11 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		F53A0767293FFF17000BBA11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F53A076A293FFF17000BBA11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F53A077C294003BD000BBA11 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		F53A077E2940079C000BBA11 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		F53A07832940157A000BBA11 /* AlbumSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				F53A0763293FFF16000BBA11 /* Task_iTunes_AppApp.swift */,
-				F53A0765293FFF16000BBA11 /* ContentView.swift */,
+				F53A07742940001A000BBA11 /* Views */,
+				F53A077329400010000BBA11 /* ViewModels */,
+				F53A0772293FFFBF000BBA11 /* Models */,
+				F53A0771293FFFAA000BBA11 /* Data */,
 				F53A0767293FFF17000BBA11 /* Assets.xcassets */,
 				F53A0769293FFF17000BBA11 /* Preview Content */,
 			);
@@ -65,6 +78,48 @@
 				F53A076A293FFF17000BBA11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F53A0771293FFFAA000BBA11 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F53A0772293FFFBF000BBA11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F53A077C294003BD000BBA11 /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F53A077329400010000BBA11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F53A077E2940079C000BBA11 /* AlbumViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F53A07742940001A000BBA11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F53A0765293FFF16000BBA11 /* LaunchView.swift */,
+				F53A078229401504000BBA11 /* AlbumViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F53A078229401504000BBA11 /* AlbumViews */ = {
+			isa = PBXGroup;
+			children = (
+				F53A07832940157A000BBA11 /* AlbumSearchView.swift */,
+				F52055E62947889100667A31 /* ImageLoadingView.swift */,
+				F52055E829478A3900667A31 /* AlbumRowView.swift */,
+			);
+			path = AlbumViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53A0766293FFF16000BBA11 /* ContentView.swift in Sources */,
+				F53A0766293FFF16000BBA11 /* LaunchView.swift in Sources */,
+				F53A077F2940079C000BBA11 /* AlbumViewModel.swift in Sources */,
+				F53A07842940157A000BBA11 /* AlbumSearchView.swift in Sources */,
+				F52055E72947889100667A31 /* ImageLoadingView.swift in Sources */,
 				F53A0764293FFF16000BBA11 /* Task_iTunes_AppApp.swift in Sources */,
+				F52055E929478A3900667A31 /* AlbumRowView.swift in Sources */,
+				F53A077D294003BD000BBA11 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
